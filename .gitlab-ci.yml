@@ -1,0 +1,18 @@
+
+before_script:
+    - echo "CI for hello, 2017-04-26"
+    - smvn -b --version
+
+default:
+    script: 
+        - smvn -b init
+        - smvn -b bnt
+        - smvn -b install
+        - smvn -b deploy
+
+default2:
+    script: 
+        - smvn -b init
+        - smvn -b bnt
+        - smvn -b install
+        - smvn -b deploy
